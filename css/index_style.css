@@ -1,0 +1,26 @@
+.nav
+{
+    margin:auto;
+    width:75%;
+}
+.carousel-inner
+{
+    margin:auto;
+    width:90%;
+}
+.taxi
+{
+
+animation-name: taxiMove;
+animation-duration: 6s;
+position: relative;
+animation-iteration-count:infinite ;
+}
+@keyframes taxiMove
+{
+    0%{left:0px;top:0px;transform:rotateY(0deg);}
+    50%{left:75%;top:0px;transform:rotateY(0deg);}
+    51%{left:75%;top:0px;transform:rotateY(180deg);}
+    100%{left:0px;top:0px;transform:rotateY(180deg);}
+
+}

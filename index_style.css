@@ -1,0 +1,880 @@
+@font-face {
+    font-family: Segoe UI;
+    src: url(SegoeUI.ttf);
+  }
+body
+{
+    font-family: 'Segoe UI';
+}
+Header
+{
+    height: 40rem;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/intro-bg.jpg');
+    background-size:cover;
+}
+.navbar a
+{
+    color: white;
+}
+.fixed-top.scrolled
+{
+    background-color: #fff !important;
+    transition: background-color;
+}
+.fixed-top.scrolled a
+{
+    color:#0078ff !important;
+    transition:color;
+}
+.navbar-brand
+{
+    font-weight: 600;
+    font-size:1.6rem;
+}
+.nav-item
+{
+    margin-top:0.8rem;
+    margin-bottom:0.8rem;
+    margin-right:1.2rem;
+}
+.nav-link
+{
+font-size: 1rem;
+font-weight: 600;
+position: relative;
+}
+.nav-link::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition:0.7s 0s width,0s 0s visibility;
+    transition-timing-function:linear;
+    transition-delay: 0s;
+    border:solid 1px white;
+    width:0px;
+    visibility: hidden;
+}
+.nav-link:hover::after
+{
+    width:2.5rem;
+    visibility: visible;
+}
+.fixed-top.scrolled .nav-link::after
+{
+    border:solid 1px #0078ff;
+}
+.HeaderContent
+{
+    color: white;
+}
+.HeaderContent h1
+{
+    font-size:4.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.text-white
+{
+    color: white !important;
+}
+.HeaderContent h2::after
+{
+    content:"";
+    animation-name: Header_Animation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size:2.5rem;
+}
+@keyframes Header_Animation
+{
+    0%{content: "|";}
+    0.76%{content: "|";}
+    1.52%{content: "G|";}
+    2.28%{content: "Gr|";}
+    3.04%{content: "Gra|";}
+    3.809%{content: "Grap|";}
+    4.56%{content: "Graph|";}
+    5.32%{content: "Graphi|";}
+    6.089%{content: "Graphic|";}
+    6.849%{content: "Graphic |";}
+    7.60%{content: "Graphic D|";}
+    8.369%{content: "Graphic De|";}
+    9.12%{content: "Graphic Des|";}
+    9.889%{content: "Graphic Desi|";}
+    10.64%{content: "Graphic Desig|";}
+    11.409%{content: "Graphic Design|";}
+    12.169%{content: "Graphic Designe|";}
+    12.929%{content: "Graphic Designer|";}
+    13.69%{content: "Graphic Designe|";}    
+    14.44%{content: "Graphic Design|";}
+    15.209%{content: "Graphic Desig|";}
+    15.97%{content: "Graphic Desi|";}
+    16.73%{content: "Graphic Des|";}
+    17.49%{content: "Graphic De|";}
+    18.25%{content: "Graphic D|";}
+    19.01%{content: "Graphic |";}
+    19.76%{content: "Graphic|";}
+    20.52%{content: "Graphi|";}
+    21.28%{content: "Graph|";}
+    22.05%{content: "Grap|";}
+    22.81%{content: "Gra|";}
+    23.56%{content: "Gr|";}
+    24.32%{content: "G|";}
+    25.08%{content: "|";}
+    27.36%{content: "C|";}
+    28.129%{content: "CE|";}
+    28.88%{content: "CEO|";}
+    29.64%{content: "CEO |";}
+    30.41%{content: "CEO D|";}
+    31.16%{content: "CEO De|";}
+    31.92%{content: "CEO Dev|";}
+    32.68%{content: "CEO DevF|";}
+    33.44%{content: "CEO DevFo|";}
+    34.21%{content: "CEO DevFol|";}
+    34.96%{content: "CEO DevFoli|";}
+    35.73%{content: "CEO DevFolio|";}
+    36.48%{content: "CEO DevFoli|";}
+    37.24%{content: "CEO DevFol|";}
+    38.01%{content: "CEO DevFo|";}
+    38.76%{content: "CEO DevF|";}
+    39.53%{content: "CEO Dev|";}
+    40.28%{content: "CEO De|";}
+    41.04%{content: "CEO D|";}
+    41.81%{content: "CEO |";}
+    42.56%{content: "CEO|";}
+    43.32%{content: "CE|";}
+    44.09%{content: "C|";}
+    45.6%{content: "|";}
+    47.13%{content: "W|";}
+    47.9%{content: "We|";}
+    48.64%{content: "Web|";}
+    49.41%{content: "Web D|";}
+    50.17%{content: "Web De|";}
+    50.93%{content: "Web Dev|";}
+    51.69%{content: "Web Deve|";}
+    52.45%{content: "Web Devel|";}
+    53.21%{content: "Web Develo|";}
+    53.97%{content: "Web Develop|";}
+    54.73%{content: "Web Develope|";}
+    55.48%{content: "Web Developer|";}
+    56.25%{content: "Web Develope|";}
+    57.1%{content: "Web Develop|";}
+    57.8%{content: "Web Develo|";}
+    58.53%{content: "Web Devel|";}
+    59.3%{content: "Web Deve|";}
+    60.05%{content: "Web Dev|";}
+    60.8%{content: "Web De|";}
+    61.57%{content: "Web Des|";}
+    62.33%{content: "Web Desi|";}
+    63.09%{content: "Web Desig|";}
+    63.84%{content: "Web Design|";}
+    64.61%{content: "Web Designe|";}
+    65.37%{content: "Web Designer|";}
+    66.13%{content: "Web Designe|";}
+    66.88%{content: "Web Design|";}
+    67.64%{content: "Web Desig|";}
+    68.41%{content: "Web Desi|";}
+    69.17%{content: "Web Des|";}
+    69.92%{content: "Web De|";}
+    70.68%{content: "Web D|";}
+    71.44%{content: "Web |";}
+    72.3%{content: "Web|";}
+    72.96%{content: "We|";}
+    73.72%{content: "W|";}
+    75.24%{content: "|";}
+    76.76%{content: "F|";}
+    77.53%{content: "Fr|";}
+    78.28%{content: "Fro|";}
+    79.04%{content: "Fron|";}
+    479.80%{content: "Front|";}
+    80.56%{content: "Front |";}
+    81.4%{content: "Front D|";}
+    82.16%{content: "Front De|";}
+    82.92%{content: "Front Dev|";}
+    83.68%{content: "Front Deve|";}
+    84.5%{content: "Front Devel|";}
+    85.3%{content: "Front Develo|";}
+    86.06%{content: "Front Develop|";}
+    86.82%{content: "Front Develope|";}
+    87.7%{content: "Front Developer|";}
+    88.5%{content: "Front Develope|";}
+    89.3%{content: "Front Develop|";}
+    90.12%{content: "Front Develo|";}
+    90.94%{content: "Front Devel|";}
+    91.76%{content: "Front Deve|";}
+    92.6%{content: "Front Dev|";}
+    93.4%{content: "Front De|";}
+    94.2%{content: "Front D|";}
+    95.04%{content: "Front |";}
+    95.86%{content: "Front|";}
+    96.68%{content: "Fron|";}
+    97.5%{content: "Fro|";}
+    98.4%{content: "Fr|";}
+    99.1%{content: "F|";}
+    100%{content: "|";}
+}
+.Sec1 .AboutPart .AboutData
+{
+    display:flex;
+    flex-direction: row;
+}
+.Sec1 .AboutPart .AboutData h1
+{
+    font-weight: 600;
+    font-size:1.125rem;
+    margin-right: 0.2rem;
+}
+.Sec1 .AboutPart .AboutData p
+{
+    font-weight: 400;
+    font-size:1rem;
+    color: #4e4e4e;
+    line-height: 1.5;
+}
+.Sec1 .AboutPart .SkillPercent h1
+{
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #1e1e1e;
+}
+.Sec1 .AboutPart .progressPart .Progress_Header h2
+{
+    font-size: 1rem;
+    font-weight: 400;
+    Color:#4e4e4e;
+    Line-Height:1.5rem;
+}
+.Sec1 .AboutPart .progressPart .Progress_Header h3
+{
+    font-size: 0.9rem;
+    font-weight: 400;
+    Line-Height:1.3rem;
+}
+.progress
+{
+    height:0.7rem;
+    margin-bottom:1rem;
+}
+.Sec1 .AboutPart .AboutDesc h1
+{
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom:2.5rem;
+    padding-left: 1.5rem;
+}
+.Sec1 .AboutPart .AboutDesc h1::after
+{
+    content: "";
+    position: absolute;
+    border:solid 0.1rem #0275d8;
+    left:1.5rem;
+    bottom:-0.7rem;
+    width:18%;
+}
+.Sec1 .AboutPart .AboutDesc p
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.875rem;
+    color:rgb(78, 78, 78);
+    margin-bottom:1.5rem;
+    padding:0 1.5rem;
+}
+
+.Sec1 .ServicesHeader .Header h1,.Sec3 .Header h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.Sec1 .ServicesHeader .Header p,.Sec3 .Header p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.Sec1 .ServicesHeader .Header .UnderLine,.Sec3 .Header .UnderLine,.Sec5 .Header .UnderLine
+{
+    border:solid 0.17rem #0275d8;
+    width:3rem !important;
+}
+
+.Sec1 .Service_icon
+{
+    box-sizing: content-box !important;
+    font-size: 2.8rem;
+    color:rgb(30, 30, 30);
+    padding:1.5rem 1.1rem !important;
+    border-width:0.7rem !important;
+    transition:all;
+}
+.Sec1 .card-body h5
+{
+    color:rgb(30, 30, 30);
+    font-weight:500;
+    line-height:1.68rem;
+    font-size: 1.4rem;
+    margin-bottom:0.8rem;
+}
+.Sec1 .card-body p
+{
+    color:rgb(78, 78, 78);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.Service_icon:hover
+{
+    border-color:lightsteelblue !important; 
+    color: white;
+    background-color:#0275d8;
+}
+.Sec2
+{
+    background-image:url('images/post-3.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    height:45rem;
+    position: relative;
+}
+.Sec2_Layer 
+{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0%;
+    background-color:#0078ff;
+    opacity: 0.7;
+}
+.Part
+{
+    background-color: transparent !important;
+    border:0;
+}
+.Sec2 .Sec2IconAdjust
+{
+    box-sizing: content-box !important;
+    font-size: 2rem;
+    color:rgb(30, 30, 30);
+    padding:1rem 0.7rem !important;
+    border-width:0.6rem !important;
+}
+.border-lightsteelblue
+{
+    border-color: #ffffff!important;
+}
+.Sec2 h5
+{
+    font-weight: 400;
+    font-size: 2rem;
+    color:white;
+}
+.Sec2 .card-body
+{
+    margin:0 !important;
+    padding:0 !important;
+}
+.Sec2 .card-title
+{
+    margin:1rem 0rem 0.6rem 0rem!important;
+    padding:0 !important;
+}
+.Sec2 .card-text
+{
+    margin:0!important;
+    padding:0 !important;
+}
+.Sec2 p
+{
+    font-weight: 400;
+    font-size: 1rem;
+    color:white;
+}
+.Sec3 .Deck_Margin
+{
+    margin-bottom: 1rem !important;
+}
+.Sec3 .Deck_Margin
+{
+    padding: 0 !important;
+    margin-top: 1rem !important;
+}
+.Sec3 .Sec3_Header h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.Sec3 .Sec3_Header .Header p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.Sec3 .Sec3_Header .Header .UnderLine
+{
+    border:solid 0.17rem #0275d8;
+    width:4%;
+}
+.Sec3 .card-text
+{
+    color: #0078ff !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    margin:0 !important;
+}
+.Sec3 .card-title
+{
+    margin:0rem 0rem 0.3rem 0rem!important;
+}
+.Sec3 .Sec3_Icon
+{
+    font-size:1rem;
+    font-weight:100 !important;
+    margin-top:2.5rem;
+    margin-right: 0.5rem;
+    box-sizing: content-box !important;
+    padding:0.2rem 0.2rem !important; 
+    color: #0078ff !important;
+    border-color: #0078ff !important;
+    border-width:0.1rem !important;
+}
+.Sec3 .card
+{   
+    margin-bottom:1rem !important;
+    overflow: hidden;
+}
+.Sec3 img:hover 
+{
+    transform:scale(1.1);
+}
+.Sec3 img
+{
+    transition:0.2s 0s all;
+}
+.Sec4
+{
+    background-image:url('images/overlay-bg.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    height:30rem;
+    position: relative;
+}
+.Sec4_Layer 
+{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0%;
+    background-color:#0078ff;
+    opacity: 0.7;
+}
+.Sec4 .card-img-top
+{
+    width:9rem !important;
+    padding: 0!important;
+}
+.Sec4 .card
+{
+    margin: 0 !important;
+    padding:0 !important;
+    background-color: transparent !important;
+    border:none !important;
+}
+.Sec4 h5
+{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+.Sec4 p
+{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+.Sec4 .card-text
+{
+    margin:0 !important;
+    padding: 0 !important;
+}
+.Sec4 .card-title
+{
+    margin:0rem !important;
+    padding:0rem !important;
+}
+.w-55
+{
+    width:55%;
+}
+.Sec4 .carousel-item
+{
+background-image: url("images/overlay-bg.jpg");
+background-attachment: fixed;
+height: 33rem!important;
+background-size: 100% 100%;
+position: relative;
+}
+.Sec4 .carousel-indicators .Indicatorsize 
+{
+    width: 2rem !important;
+    height: 0.5rem !important;
+}
+.Sec4 .carousel-indicators .active
+{
+    background-color: black;
+}
+.Sec4 .Sec4_Quote_i
+{
+    color: #0275d8;
+    font-size: 3rem !important;
+    font-weight: 400 !important;
+}
+.Sec5 .Sec5_Header h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.Sec5 .Sec5_Header .Header p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.Sec5 .Sec5_Header .Header .UnderLine
+{
+    border:solid 0.17rem #0275d8;
+    width:4%;
+}
+.Sec5 .card-img-top ,.Sec5 .card-body ,.Sec5 .card-text ,.Sec5 .card-title
+{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.Sec5 .card-title
+{
+    color:rgb(30, 30, 30);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.56rem;
+    margin-bottom: 0.6rem !important;
+}
+.Sec5 .card-title:hover
+{
+    color: #0275d8;
+}
+.Sec5 .card-text
+{
+    color:rgb(78, 78, 78);
+    font-size:1rem;
+    font-weight:400;
+    line-height: 1.5rem;
+    margin-bottom: 2rem !important;
+}
+.Sec5 button
+{
+    position: relative;
+    bottom:1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+.Sec5 .card-footer .Footer-Left p
+{
+    color:rgb(30, 30, 30);
+    font-size:1rem;
+    font-weight:400;
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
+.Sec5 .card-footer .Footer-Left p:hover
+{
+color:#0275d8;
+}
+.Sec5 .card-footer img
+{
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
+.Sec5 .card-footer .w-h-10
+{
+    width: 15% !important;
+    height: 15% !important;
+
+}
+.Sec5 .IconAdjust
+{
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5rem !important;
+    margin-top: 0.4rem !important;
+    margin-right: 0.2rem !important;
+}
+.Sec5 .Footer-Right p
+{
+    font-size: 1rem !important;
+}
+.Sec6
+{
+    background-image:url('images/overlay-bg.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    height:48rem;
+    position: relative;
+}
+.Sec6_Layer 
+{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0%;
+    background-color:#0078ff;
+    opacity: 0.7;
+}
+.Sec6 .SendBtn
+{
+
+    border-radius:5rem;
+    padding: .9rem 2.3rem;
+    font-size: 1.2rem;
+    background-color: #0078ff;
+    color: #fff;
+    border-color: #cde1f8;
+    border:0.2rem solid transparent;
+    transition:s 0s border-color;
+}
+.Sec6 .SendBtn:hover
+{ 
+    border-color:lightskyblue;
+}
+.Sec6 .Sec6_Head h1
+{
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom:2.5rem;
+}
+.Sec6 .Sec6_Head h1::after
+{
+    content: "";
+    position: absolute;
+    border:solid 0.1rem #0275d8;
+    width:3rem !important;
+    left:0rem;
+    bottom:-0.7rem;
+}
+.Sec6 .Sec6_Para
+{
+    font-size:1.25rem;
+    color:rgb(78, 78, 78);
+    font-weight:300;    
+    line-height: 1.87rem;
+}
+.Sec6 .Links
+{
+    font-size: 1.7rem;
+    line-height: 1.4rem;
+}
+.Sec6_List .S6_Icon
+{
+    font-size: 1.3rem !important;
+    box-sizing: content-box !important;
+    padding:0.5rem 0.3rem !important;
+    border-width: 0.2rem !important;
+}
+.Sec6 .S6_Link
+{
+    font-size: 0.8rem !important;
+}
+.Sec6 li
+{
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.Sec6 ul
+{
+    margin:  0 !important;
+    padding: 0 !important;
+}
+@media (max-width:767px)
+{
+
+ .navbar-nav
+ {
+     background-color: white !important;
+ }   
+ .navbar a
+ {
+    color:#0078ff !important;
+ }
+ /* Change toggler icon color*/
+ .navbar span 
+ {
+     color: white !important;
+ }
+ .fixed-top.scrolled span
+ {
+     color: #0078ff !important;
+ }
+ /*Brand*/
+ .navbar a
+ {
+     color: white !important;
+ }
+ .fixed-top.scrolled a
+ {
+     color: #0078ff !important;
+ }
+ /*Li*/
+ .navbar li
+ {
+    font-size: 1rem !important;
+    margin-bottom:0.1rem!important;
+    margin-left: 0.6rem !important;
+    margin-top:0 !important;
+ }
+ .navbar li a
+ {
+    color: #0078ff !important;
+ }
+ /**/
+
+ /*Li Line*/
+ .nav-link::after
+ {
+     border-color:#0078ff !important;
+ }
+ /**/
+/*Home Description*/
+ .HeaderContent h1
+{
+    font-size:3rem;
+    padding:0rem 1rem !important;
+}
+.HeaderContent h2::after
+{
+    font-size:1.5rem;
+}
+/**/
+/*Adjust Background of Sec1*/
+.Sec1
+{
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+    padding-bottom: 3rem !important;
+}
+.Sec1_Contian_Padding
+{
+    padding:0 !important;
+}
+/**/
+
+/*space between Pic and data*/
+.Sec1 .Data
+{
+    padding-top:2rem !important;
+}
+/**/
+/*space between data and Skills*/
+.Sec1 .SkillPercent
+{
+    margin-top: 0.2rem !important;
+}
+/**/
+/*space between paragraphs*/
+.Sec1 .AboutPart .AboutDesc p
+{
+    margin-bottom:1rem;
+}
+/**/
+/*Adjust service width*/
+.Sec1 .Services_Padding_X
+{
+    padding: 0 !important;
+}
+/**/
+/*space between services*/
+.Services_Padding_Y
+{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+/**/
+
+.Sec2 h5
+{
+    font-size: 1.4rem !important;
+}
+.Sec2 .card-title
+{
+    margin:0.2rem 0rem 0.1rem 0rem!important;
+}
+.Sec2 .card-text
+{
+    margin:0 !important;
+}
+.Sec2 .Sec2IconAdjust
+{
+    font-size: 1.2rem !important;
+}
+.Sec3 .card
+{
+    padding-bottom: 2rem !important;
+    margin-bottom: 0rem !important;
+}
+.Sec4 .Sec4_Quote_i
+{
+    font-size: 2.3rem !important;
+}
+.Sec5 .card
+{
+    padding-left:0.1rem !important;
+    padding-right:0.1rem !important;
+}
+.Sec6 .padding_Form
+{
+    padding:2rem 2rem !important;
+}
+.Sec6 .Sec6_Head
+{
+    margin-top:0rem !important;
+    margin-bottom: 0rem !important;
+    padding:1rem 1rem 2rem 1rem!important;
+}
+
+.Sec6 .SendBtn
+{
+    padding: .5rem 1.2rem;
+    font-size: 1rem;
+}
+.Sec6
+{
+    height: auto;
+}
+.Sec6 .Sec6_Head h1
+{
+    margin-bottom:1rem;
+}
+.Sec6 .Button_Margin
+{
+    margin-bottom: 0rem !important;
+}
+.Sec6_Para
+{
+    margin-top: 2rem !important;
+    font-size: 1.2rem !important;
+}
+}
